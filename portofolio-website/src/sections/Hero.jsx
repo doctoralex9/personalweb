@@ -1,4 +1,6 @@
 import { words } from "../constants/index.js"
+import Button from "../components/Button.jsx"
+
 
 const Hero = () => {
     return (
@@ -40,9 +42,13 @@ const Hero = () => {
                     pointer-events-none">Hi, I'm Alexander, a developer based
                     in Athens with a passion for ai and web development.
                     </p>
-
+                    <Button
+                     className="md:w-80 md:h-16 w-60 h-12"
+                     id="button"
+                     text="See my Work"
+                     />
                     </div>
-
+ 
                 </header>
                 {/*RIGHT: 3D MODEL */}
             </div>
