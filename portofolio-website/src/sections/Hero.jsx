@@ -1,5 +1,6 @@
 import { words } from "../constants/index.js"
 import Button from "../components/Button.jsx"
+import HeroExperience from "../components/HeroModels/HeroExperience.jsx"
 
 
 const Hero = () => {
@@ -46,13 +47,18 @@ const Hero = () => {
                      className="md:w-80 md:h-16 w-60 h-12"
                      id="button"
                      text="See my Work"
-                     />
+                    />
                     </div>
  
                 </header>
                 {/*RIGHT: 3D MODEL */}
-            </div>
+                <figure>
+                    <div className="hero-3d-layout">
+                        <HeroExperience />
 
+                    </div>
+                </figure>
+            </div>
         </section>
     )
 }
