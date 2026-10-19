@@ -1,6 +1,7 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive'
+import { Room } from './Room'
 
 
 const HeroExperience = () => {
@@ -14,13 +15,13 @@ const HeroExperience = () => {
 
         <OrbitControls
          enablePan={false}
-         enableZoom={!isTablet} />   
+         enableZoom={!isTablet}
+         maxDistance={20}
+         minDistance={5}
+         minPolarAngle={Math.PI / 5}
+         maaxPolarAngle={Math.PI /2} />   
 
-        <mesh>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color="teal" />
-        </mesh>
-
+        <Room />
     </Canvas>
   )
 }
