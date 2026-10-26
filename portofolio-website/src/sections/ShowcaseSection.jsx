@@ -22,7 +22,7 @@ const ShowcaseSection = () => {
                 {/*RIGHT SIDE*/}
                 <div className='project-list-wrapper overflow-hidden'>
                     <div className='project'>
-                        <div className='image-wrapper bg-[#000000]'>
+                        <div className='image-wrapper bg-[#F3EEE6]'>
                             <video
                                 src="/videos/pitogyro.mp4"
                                 poster="/videos/pitogyro-poster.jpg"
@@ -33,11 +33,13 @@ const ShowcaseSection = () => {
                                 preload="metadata"
                                 aria-label="Pitogyro website scroll animation preview"
                                 />
-                        </div>        
+                        </div>
+                            <h2>ΠΙΤΟΓΥΡΟ: A Modern Greek Street Food Website</h2>
+                            <p className='text-white-50'>Built with React, GSAP ScrollTrigger, and Lenis, the page unwraps a pita layer by layer as you scroll.</p>        
                     </div>
 
                     <div className='project'>
-                        <div className='image-wrapper bg-[#000000]'>
+                        <div className='image-wrapper bg-[#2A2118]'>
                             <video
                                 src="/videos/bar.mp4"
                                 poster="/videos/bar-poster.jpg"
@@ -47,8 +49,10 @@ const ShowcaseSection = () => {
                                 playsInline
                                 preload="metadata"
                                 aria-label="Bar website scroll animation preview"
-                                />
-                        </div>        
+                                /> 
+                        </div>
+                            <h2>BAR: A Cinematic Cocktail Bar Website</h2>
+                            <p className='text-white-50'>GSAP animations and Lenis smooth scrolling lead visitors from the signature pour to pinned cocktail spotlights, in English and Greek.</p>        
                     </div>
                 </div>
             </div>
