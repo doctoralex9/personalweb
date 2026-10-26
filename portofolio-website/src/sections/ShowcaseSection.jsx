@@ -23,8 +23,31 @@ const ShowcaseSection = () => {
                 <div className='project-list-wrapper overflow-hidden'>
                     <div className='project'>
                         <div className='image-wrapper bg-[#000000]'>
-                            <img src="/images/project2.png" alt="Bar Website"/>
-                            <h2>Bar Website</h2>
+                            <video
+                                src="/videos/pitogyro.mp4"
+                                poster="/videos/pitogyro-poster.jpg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+                                aria-label="Pitogyro website scroll animation preview"
+                                />
+                        </div>        
+                    </div>
+
+                    <div className='project'>
+                        <div className='image-wrapper bg-[#000000]'>
+                            <video
+                                src="/videos/bar.mp4"
+                                poster="/videos/bar-poster.jpg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+                                aria-label="Bar website scroll animation preview"
+                                />
                         </div>        
                     </div>
                 </div>
