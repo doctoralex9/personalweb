@@ -1,11 +1,49 @@
 import React from 'react'
 import { useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
     const sectionRef = useRef(null);
     const project1Ref = useRef(null);
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
+
+    useGSAP(() => {
+    //Everything in this block of code works only oncle when the component melts
+    //It works similarly to Reacts
+        const projects = [project1Ref.current, project2Ref.current, 
+    project3Ref.current];
+
+        projects.forEach((card, index) =>
+        gsap.fromTo(
+            card,
+            {
+                y: 50, 
+                opacity: 0,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                //Every project appears 3 sec after the previous, while you scrolling
+                delay: 0.3 * (index + 1),
+                scrollTrigger: {
+                    trigger: card,
+                    //The animation starts, when the top of the card is near (100px) to the bottom
+                    start: 'top bottom-=100'
+                }
+            }
+        ))
+        gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0 }, 
+            { opacity: 1, duration: 1.5 })
+    }, [])
+
   return (
     <div id="work" ref={sectionRef} className='app-showcase'>
         <div className='w-full'>
