@@ -1,12 +1,17 @@
 import React from 'react'
+import { useRef } from 'react';
 
 const ShowcaseSection = () => {
+    const sectionRef = useRef(null);
+    const project1Ref = useRef(null);
+    const project2Ref = useRef(null);
+    const project3Ref = useRef(null);
   return (
-    <div id="work" className='app-showcase'>
+    <div id="work" ref={sectionRef} className='app-showcase'>
         <div className='w-full'>
             <div className='showcaselayout'>
                 {/*LEFT SIDE*/}
-                <div className='first-project-wrapper'>
+                <div className='first-project-wrapper' ref={project1Ref}>
                     <div className='image-wrapper bg-[#000000]'>
                         <img src='/images/project1.png' alt="Chatbot" />     
                     </div>
@@ -21,7 +26,7 @@ const ShowcaseSection = () => {
 
                 {/*RIGHT SIDE*/}
                 <div className='project-list-wrapper overflow-hidden'>
-                    <div className='project'>
+                    <div className='project' ref={project2Ref}>
                         <div className='image-wrapper bg-[#F3EEE6]'>
                             <video
                                 src="/videos/pitogyro.mp4"
@@ -38,7 +43,7 @@ const ShowcaseSection = () => {
                             <p className='text-white-50'>Built with React, GSAP ScrollTrigger, and Lenis, the page unwraps a pita layer by layer as you scroll.</p>        
                     </div>
 
-                    <div className='project'>
+                    <div className='project' ref={project3Ref}>
                         <div className='image-wrapper bg-[#2A2118]'>
                             <video
                                 src="/videos/bar.mp4"
