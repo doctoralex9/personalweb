@@ -416,6 +416,14 @@ section {
 .marquee-item {
   float: left;
 }
+.marquee-logo {
+  width: 100%;
+  background-color: #858FAD;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 @keyframes marquee {
   0% {
     left: 0;

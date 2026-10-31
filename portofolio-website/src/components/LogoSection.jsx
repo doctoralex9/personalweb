@@ -4,9 +4,15 @@ import { logoIconsList } from '../constants'
 const LogoIcon = ({ icon }) => {
     return (
     <div className='flex-none flex-center marquee-item'>
-        <img src={icon.imgPath} alt={icon.name} />
+        <div
+            role='img'
+            aria-label={icon.name}
+            className='marquee-logo md:h-9 h-7'
+            style={{ maskImage: `url(${icon.imgPath})` }}
+        />
     </div>)
 }
+
 
 const LogoSection = () => {
   return (
