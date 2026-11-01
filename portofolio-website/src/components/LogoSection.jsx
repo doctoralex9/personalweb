@@ -9,7 +9,10 @@ const LogoIcon = ({ icon }) => {
             aria-label={icon.name}
             className='marquee-logo md:h-9 h-7'
             style={{ maskImage: `url(${icon.imgPath})` }}
-        />
+        >
+            {/*invisible copy only gives the box the logo's real shape*/}
+            <img src={icon.imgPath} alt='' className='md:h-9 h-7 w-auto md:max-w-36 max-w-28 invisible' />
+            </div>
     </div>)
 }
 
