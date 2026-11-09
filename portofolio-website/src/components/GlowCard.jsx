@@ -5,7 +5,14 @@ const GlowCard = ({card, children, index}) => {
 
     const handleMouseMove = (index) => (e) => {
         const card = cardRefs.current[index];
-        if(!card) return;
+        if(card) return;
+
+            //Get the mouse posotion relative to card
+            const rect = card.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left - rect.width / 2;
+            const mouseY = e.clientY - rect.top - rect.height / 2;
+
+            //Claculate
     }
 
   return (
