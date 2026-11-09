@@ -5,7 +5,7 @@ const GlowCard = ({card, children, index}) => {
 
     const handleMouseMove = (index) => (e) => {
         const card = cardRefs.current[index];
-        if(card) return;
+        if(!card) return;
     }
 
   return (
@@ -19,7 +19,7 @@ const GlowCard = ({card, children, index}) => {
             ))}
         </div>
         <div className='mb-5'>
-            <p className="text-white-50 text-lg">{card.review}</p>
+            <p className="text-white-50 text-lg">{card.summary}</p>
         </div>
         {children}
     </div>

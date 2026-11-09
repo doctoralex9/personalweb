@@ -151,7 +151,8 @@ const expCards = [
     where: "Freelance · Athens",
     date: "June 2026 - Present",
     logoPath: "/images/code.svg",
-    summary: "Building motion-led websites and web apps for small businesses, starting with self-initiated concept projects.",
+    imgPath: "/images/code.svg",
+    summary: "Building 3D cinematic websites with scroll animations, using React, Vite, GSAP ScrollTrigger, Lenis, Three.js, React Three Fiber and Tailwind CSS, with AI image and video generation (Higgsfield) and an AI-assisted workflow in Claude Code.",
     stack: ["React", "Vite", "Next.js", "GSAP", "Lenis", "Supabase", "Higgsfield", "Claude Code"],
     responsibilities: [
       "Built Pitogyro and Bar, two scroll-driven concept sites for a souvlaki shop and a nightlife venue, with Vite + React, GSAP ScrollTrigger and Lenis smooth scrolling.",
@@ -165,7 +166,7 @@ const expCards = [
     date: "December 2025 - April 2026",
     logoPath: "/images/logos/7projects-mark.png",
     imgPath: "/images/logos/7projects.png",
-    summary: "Full-time role at an Athens AI startup, building AI products end to end in Python and React/Next.js.",
+    summary: "Built a production RAG chatbot and AI agents at an Athens AI startup, and improved the UI and UX of some of its products.",
     stack: ["Python", "TypeScript", "Next.js", "OpenAI API", "PostgreSQL / pgvector", "SQL Server"],
     responsibilities: [
       "Delivered a production text-to-SQL and RAG chatbot that answers questions in Greek and English over a Microsoft SQL Server database, using pgvector + OpenAI embeddings, hybrid search and confidence scoring.",
@@ -178,7 +179,8 @@ const expCards = [
     where: "Independent Projects",
     date: "February 2024 - September 2025",
     logoPath: "/images/logos/python.svg",
-    summary: "Self-directed Python projects: web apps and APIs in Flask, Django and FastAPI, plus an MCP server for Claude, all on GitHub.",
+    imgPath: "/images/logos/python.svg",
+    summary: "Self directed Python learning: REST APIs, web frameworks (Django, Flask, FastAPI), databases (PostgreSQL, MySQL, SQL Server), testing, version control and monitoring (Postman, GitHub), AI (OpenAI, Anthropic, LangChain, Pydantic, MCP) and the basics of NumPy, Pandas and Matplotlib.",
     stack: ["Python", "Flask", "Django", "FastAPI", "SQLAlchemy", "MySQL", "MCP"],
     responsibilities: [
       "Built a Flask REST API with user-management endpoints and an AI chatbot (Coze Web SDK), with a Bootstrap frontend offering consultation links, accountant referrals, live weather, Google search and email summaries.",
