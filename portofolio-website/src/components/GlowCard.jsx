@@ -5,7 +5,7 @@ const GlowCard = ({card, children, index}) => {
 
     const handleMouseMove = (index) => (e) => {
         const card = cardRefs.current[index];
-        if(card) return;
+        if(!card) return;
 
             //Get the mouse position relative to card
             const rect = card.getBoundingClientRect();
