@@ -29,7 +29,7 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 3, suffix: "+", label: "Years of Experience" },
+  { value: 3, suffix: "+", label: "Years of building" },
   { value: 15, suffix: "+", label: "Completed Projects" },
   { value: 100, suffix: "%", label: "Mobile Responsive" },
   { value: 24, suffix: "h", label: "Response Time" },
@@ -95,7 +95,7 @@ const techStackImgs = [
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Self taught Python Developer",
     imgPath: "/images/logos/python.svg",
   },
   {
@@ -120,7 +120,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Self taught Python Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -175,7 +175,7 @@ const expCards = [
     ],
   },
   {
-    title: "Python Developer",
+    title: "Self taught Python Developer",
     where: "Independent Projects",
     date: "February 2024 - September 2025",
     logoPath: "/images/logos/python.svg",
