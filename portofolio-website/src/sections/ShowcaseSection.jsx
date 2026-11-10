@@ -55,10 +55,11 @@ const ShowcaseSection = () => {
                     </div>
                     <div className='text-content'>
                         <h2>Shape It Your Way: An AI Chatbot You Can Customize for Any Business, Brand, or Use Case</h2>
-                        <p className='text-white-50 md:text-xl'>A showcase of modern web development: React and React
-                             Three Fiber bring the 3D scene to life, GSAP powers smooth animations, and Tailwind CSS 
-                             keeps the design sharp on every screen.
-                        </p>
+                        <p className='text-white-50 md:text-xl'>Built with Next.js 15 and the Vercel AI SDK: streaming OpenAI responses, Supabase login and file uploads, ready to adapt to any business.</p>
+                        <div className='flex gap-5 text-white-50'>
+                            <a href="https://ai-chatbot-nextjs-navy.vercel.app" target="_blank" rel="noopener noreferrer" className='underline hover:text-white'>Live demo ↗</a>
+                            <a href="https://github.com/doctoralex9/ai-chatbot-nextjs" target="_blank" rel="noopener noreferrer" className='underline hover:text-white'>GitHub ↗</a>
+                        </div>
                     </div>
                 </div>
 
@@ -78,7 +79,8 @@ const ShowcaseSection = () => {
                                 />
                         </div>
                             <h2>ΠΙΤΟΓΥΡΟ: A Modern Greek Street Food Website</h2>
-                            <p className='text-white-50'>Built with React, GSAP ScrollTrigger, and Lenis, the page unwraps a pita layer by layer as you scroll.</p>        
+                            <p className='text-white-50'>Built with React, GSAP ScrollTrigger, and Lenis, the page unwraps a pita layer by layer as you scroll.</p>
+                            <a href="https://pitogyro-ashy.vercel.app/" target="_blank" rel="noopener noreferrer" className='inline-block mt-3 text-white-50 underline hover:text-white'>Live site ↗</a>        
                     </div>
 
                     <div className='project' ref={project3Ref}>
@@ -95,7 +97,8 @@ const ShowcaseSection = () => {
                                 /> 
                         </div>
                             <h2>BAR: A Cinematic Cocktail Bar Website</h2>
-                            <p className='text-white-50'>GSAP animations and Lenis smooth scrolling lead visitors from the signature pour to pinned cocktail spotlights, in English and Greek.</p>        
+                            <p className='text-white-50'>GSAP animations and Lenis smooth scrolling lead visitors from the signature pour to pinned cocktail spotlights, in English and Greek.</p>
+                            <a href="https://bar-bice-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className='inline-block mt-3 text-white-50 underline hover:text-white'>Live site ↗</a>        
                     </div>
                 </div>
             </div>
