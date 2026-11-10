@@ -58,7 +58,7 @@ const Hero = () => {
                             <h1>that Deliver Results</h1>
                         </div>
                     <p className="text-white-50 md:text-xl relative z-10
-                    pointer-events-none">Hi, I'm Alexander, an Ai web developer based
+                    pointer-events-none">Hi, I'm Alex, an AI web developer based
                     in Athens, with a passion for coding and maths.
                     </p>
                     <Button
