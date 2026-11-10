@@ -30,9 +30,9 @@ const words = [
 
 const counterItems = [
   { value: 3, suffix: "+", label: "Years of building" },
-  { value: 15, suffix: "+", label: "Completed Projects" },
-  { value: 100, suffix: "%", label: "Mobile Responsive" },
-  { value: 24, suffix: "h", label: "Response Time" },
+  { value: 8, suffix: "+", label: "Projects shipped" },
+  { value: 2, suffix: "", label: "Production AI systems" },
+  { value: 12, suffix: "+", label: "Technologies in stack" },
 ];
 
 const logoIconsList = [
