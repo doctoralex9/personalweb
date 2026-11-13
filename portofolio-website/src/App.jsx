@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar"
 import LogoSection from "./components/LogoSection"
 import ExperienceSection from "./sections/ExperienceSection"
 import TechStack from "./sections/TechStack"
+import Contact from "./sections/Contact"
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <LogoSection />
             <ExperienceSection />
             <TechStack />
+            <Contact />
         </div>
     )
 }
