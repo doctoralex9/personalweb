@@ -99,16 +99,16 @@ const techStackImgs = [
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "AI Engineer",
+    imgPath: "/images/logos/AI-engineer.png",
   },
   {
     name: "Interactive Developer",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    name: "TypeScript Developer",
+    imgPath: "/models/typescript_logo__3d_model.glb",
   },
 ];
 
@@ -120,16 +120,16 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Self taught Python Developer",
+    name: "Python Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
+    name: "AI Engineer",
+    modelPath: "/models/AI-engineer.glb",
+    scale: 25,
+    rotation: [0, 0, 0],
   },
   {
     name: "Interactive Developer",
@@ -138,9 +138,9 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
+    name: "TypeScript Developer",
+    modelPath: "/models/typescript_logo__3d_model.glb",
+    scale: 50,
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
