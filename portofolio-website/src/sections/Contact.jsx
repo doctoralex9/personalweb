@@ -23,8 +23,16 @@ const Contact = () => {
     e.preventDefault()
     // Sending the email gets added later (EmailJS)
 
-    try {
+    setLoading(true);
 
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+      )
+      //Reset form after submision  
+      setForm({ name: '', email: '', message: '' });
     } catch(error) {
       console.log("EMAILJS ERROR",error)
     } finally {
