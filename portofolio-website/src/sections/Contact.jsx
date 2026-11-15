@@ -1,10 +1,11 @@
-import { use, useState } from "react"
+import { useRef, useState } from "react"
 import TitleHeader from "../components/TitleHeader"
 import ContactExperience from "../components/Models/Contact/ContactExperience"
 import emailjs from '@emailjs/browser'
 
 
 const Contact = () => {
+  const formRef = useRef(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -29,6 +30,7 @@ const Contact = () => {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current, 
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       //Reset form after submision  
@@ -54,7 +56,7 @@ const Contact = () => {
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
+                className="w-full flex flex-col gap-7" ref={formRef}
               >
                 <div>
                   <label htmlFor="name">Your name</label>
