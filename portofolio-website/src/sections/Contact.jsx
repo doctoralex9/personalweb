@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { use, useState } from "react"
 import TitleHeader from "../components/TitleHeader"
 import ContactExperience from "../components/Models/Contact/ContactExperience"
+import emailjs from '@emailjs/browser'
+
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -9,14 +11,25 @@ const Contact = () => {
     message: "",
   })
 
+  const [loading, setLoading] = useState(false);
+
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setForm({ ...form, [name]: value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     // Sending the email gets added later (EmailJS)
+
+    try {
+
+    } catch(error) {
+      console.log("EMAILJS ERROR",error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -74,10 +87,10 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">Send Message</p>
+                    <p className="text">{loading ? 'Sending...':'Send Message'}</p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>
