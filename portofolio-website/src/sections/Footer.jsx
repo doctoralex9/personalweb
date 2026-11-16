@@ -14,7 +14,7 @@ const Footer = () => {
 
             <div className='flex flex-col justify-center md:items-start'>
                 <p className='text-center md:text-end'>
-                    {new Date().getFullYear()} Alex | Melas. All rights reserved. 
+                    © {new Date().getFullYear()} Alex | Melas. All rights reserved.
                 </p>
             </div>
 
