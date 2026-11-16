@@ -227,20 +227,20 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/alexmelas/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    url: "https://www.facebook.com/alex.melas.9",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/alexandros-melas-4a36a4174/",
   },
 ];
+
 
 export {
   words,
