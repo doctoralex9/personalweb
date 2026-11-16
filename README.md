@@ -1,21 +1,20 @@
 # Alexandros Melas · Portfolio
 
-> 🚧 **Work in progress.** The site is live and the sections marked ✅ below are finished. Skills and Contact are still being built.
-
 **Live site:** https://personalweb-chi-three.vercel.app/
 
-This is my personal portfolio website, where I share my projects and the skills behind them.
+This is my personal portfolio website, where I share some of my projects and the skills behind them.
 
 ## What's on the site
 
-| Section | Status | What it does |
-| --- | --- | --- |
-| Hero | ✅ Done | 3D room you can rotate with the mouse (React Three Fiber, bloom, particles), rotating headline words, animated counters |
-| Featured work | ✅ Done | Three projects with video previews and links to the live sites |
-| Tech marquee | ✅ Done | Logo strip that scrolls forever |
-| Experience | ✅ Done | Experience cards that slide in, with a timeline line that fills in as you scroll (GSAP ScrollTrigger) |
-| Skills | 🚧 Planned | 3D icons of my tech stack |
-| Contact | 🚧 Planned | Contact form, LinkedIn and GitHub links |
+| Section | What it does |
+| --- | --- |
+| Hero | 3D room you can rotate with the mouse (React Three Fiber, bloom, particles), rotating headline words, animated counters |
+| Featured work | Three projects with video previews and links to the live sites |
+| Tech marquee | Logo strip that scrolls forever |
+| Experience | Experience cards that slide in, with a timeline line that fills in as you scroll (GSAP ScrollTrigger) |
+| Skills | Floating 3D logos of my tech stack that you can rotate with the mouse, on cards that fade in as you scroll |
+| Contact | Contact form that sends me an email through EmailJS, next to a 3D computer you can rotate |
+| Footer | Links to my Instagram, Facebook and LinkedIn |
 
 ## Featured projects
 
@@ -31,6 +30,7 @@ This is my personal portfolio website, where I share my projects and the skills 
 - **Three.js**, **React Three Fiber**, **Drei** and **@react-three/postprocessing** for the 3D scene
 - **GSAP** and **ScrollTrigger** (through `@gsap/react`) for the animations
 - **Tailwind CSS v4** for styling
+- **EmailJS** (`@emailjs/browser`) for the contact form
 - `react-countup` for the counters and `react-responsive` for mobile and tablet tweaks to the 3D scene
 - Hosted on **Vercel**, with Vercel Analytics
 
@@ -42,10 +42,19 @@ You need Node.js 20.19+ or 22.12+ (Vite 8 requires it).
 git clone https://github.com/doctoralex9/personalweb.git
 cd personalweb/portofolio-website
 npm install
-npm run dev
 ```
 
-Then open http://localhost:5173.
+The contact form needs EmailJS keys. Create a `.env` file inside `portofolio-website/` with your own values:
+
+```
+VITE_APP_EMAILJS_SERVICE_ID=your_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Without them the site still runs, but the form can't send messages.
+
+Then start the dev server with `npm run dev` and open http://localhost:5173.
 
 | Command | What it does |
 | --- | --- |
@@ -63,9 +72,10 @@ portofolio-website/
 │   ├── images/       icons, logos, textures
 │   └── videos/       project preview videos and posters
 └── src/
-    ├── sections/     Hero, ShowcaseSection, ExperienceSection
-    ├── components/   NavBar, Button, GlowCard, LogoSection, AnimatedCounter, HeroModels/
-    └── constants/    site content: nav links, counters, logos, experience cards
+    ├── sections/     Hero, ShowcaseSection, ExperienceSection, TechStack, Contact, Footer
+    ├── components/   NavBar, Button, GlowCard, LogoSection, AnimatedCounter, TitleHeader,
+    │                 HeroLights, HeroModels/, Models/ (tech logos and the contact computer)
+    └── constants/    site content: nav links, counters, logos, experience cards, tech stack, social links
 ```
 
 Most of the text on the site lives in `src/constants/index.js`.
