@@ -221,6 +221,11 @@ const socialImgs = [
     imgPath: "/images/linkedin.png",
     url: "https://www.linkedin.com/in/alexandros-melas-4a36a4174/",
   },
+  {
+    name: "github",
+    imgPath: "/images/github.svg",
+    url: "https://github.com/doctoralex9"
+  },
 ];
 
 
